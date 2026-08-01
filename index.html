@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Sidequest Scroll</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg-start': '#1f2937', // slate-800
+              'brand-bg-end': '#111827',   // gray-900
+              'brand-text': '#f3f4f6',     // gray-100
+              'brand-accent': '#f59e0b',   // amber-500
+              'brand-accent-dark': '#d97706', // amber-600
+              'brand-card': 'rgba(31, 41, 55, 0.7)', // slate-800 with opacity
+              'brand-card-border': '#374151', // slate-700
+              'brand-primary-text': '#fde68a', // yellow-200 (lighter for quests)
+              'brand-secondary-text': '#9ca3af', // gray-400
+              'brand-title-from': '#facc15', // yellow-400
+              'brand-title-via': '#f59e0b', // amber-500
+              'brand-title-to': '#ea580c', // orange-600
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gradient-to-br from-brand-bg-start to-brand-bg-end text-brand-text flex items-center justify-center min-h-screen antialiased p-4">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

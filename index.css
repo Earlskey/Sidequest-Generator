@@ -1,3 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg-start: #1f2937;
+  --color-brand-bg-end: #111827;
+  --color-brand-text: #f3f4f6;
+  --color-brand-accent: #f59e0b;
+  --color-brand-accent-dark: #d97706;
+  --color-brand-card: rgba(31, 41, 55, 0.7);
+  --color-brand-card-border: #374151;
+  --color-brand-primary-text: #fde68a;
+  --color-brand-secondary-text: #9ca3af;
+  --color-brand-title-from: #facc15;
+  --color-brand-title-via: #f59e0b;
+  --color-brand-title-to: #ea580c;
+}
+
 /* Global custom styles for Sidequest Generator */
 html, body {
   margin: 0;
